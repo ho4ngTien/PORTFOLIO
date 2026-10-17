@@ -1,1 +1,1 @@
-export * from './components'
+export { Skills } from './components'

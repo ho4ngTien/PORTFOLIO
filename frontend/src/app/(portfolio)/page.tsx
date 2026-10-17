@@ -1,22 +1,30 @@
+import { About } from '@/features/about'
+import { Contact } from '@/features/contact'
+import { FAQ } from '@/features/faq'
+import { Hero } from '@/features/hero'
+import { Pricing } from '@/features/pricing'
+import { Projects } from '@/features/projects'
+import { Resume } from '@/features/resume'
+import { Services } from '@/features/services'
+import { Skills } from '@/features/skills'
+import { Stats } from '@/features/stats'
+import { Testimonials } from '@/features/testimonials'
 import { PortfolioLayout } from './layout'
-import { About } from '../../features/about'
-import { Contact } from '../../features/contact'
-import { Hero } from '../../features/hero'
-import { Projects } from '../../features/projects'
-import { Resume } from '../../features/resume'
-import { Services } from '../../features/services'
-import { Skills } from '../../features/skills'
 
 export function PortfolioPage() {
   return (
     <PortfolioLayout>
-      <main className="relative">
+      <main>
         <Hero />
         <About />
-        <Skills />
         <Resume />
-        <Projects />
+        <Skills />
         <Services />
+        <Stats />
+        <Projects />
+        <Pricing />
+        <FAQ />
+        <Testimonials />
         <Contact />
       </main>
     </PortfolioLayout>

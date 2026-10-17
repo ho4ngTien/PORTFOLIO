@@ -1,11 +1,10 @@
 import { BrowserRouter } from 'react-router-dom'
-import { MainLayout } from './layouts/MainLayout'
-import { AppRouter } from './router'
-import '@/shared/styles/globals.css'
+import { MainLayout } from '@/app/layouts/MainLayout'
+import { AppRouter } from '@/app/router'
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
       <MainLayout>
         <AppRouter />
       </MainLayout>

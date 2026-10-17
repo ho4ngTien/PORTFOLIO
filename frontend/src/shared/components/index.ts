@@ -1,3 +1,3 @@
-export * from './Header'
-export * from './Footer'
-export * from './Sidebar'
+export { Footer } from './Footer'
+export { Header } from './Header'
+export { SectionHeading } from './SectionHeading'

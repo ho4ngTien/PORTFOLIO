@@ -1,1 +1,1 @@
-export * from './components'
+export { Resume } from './components'

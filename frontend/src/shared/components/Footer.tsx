@@ -1,13 +1,18 @@
+import { MoveUpRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--border)] bg-[rgba(15,23,42,0.9)] py-8">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center text-[var(--muted)] sm:px-6 lg:flex-row lg:text-left">
-        <p className="text-sm">&copy; 2026 Hoàng Tiến. Crafted for recruiters, clients, and collaborators.</p>
-        <div className="flex items-center gap-4 text-sm">
-          <a href="https://github.com/ho4ngTien" target="_blank" rel="noreferrer" className="transition hover:text-white">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="transition hover:text-white">LinkedIn</a>
-          <a href="#hero" className="transition hover:text-white">Back to top</a>
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <Link className="footer-brand" to="/#hero">Hoàng Tiến<span>.</span></Link>
+        <p>Building useful interfaces with care.</p>
+        <div className="footer-links">
+          <a aria-label="GitHub" href="https://github.com/ho4ngTien" rel="noreferrer" target="_blank">gh</a>
+          <a aria-label="LinkedIn" href="https://linkedin.com" rel="noreferrer" target="_blank">in</a>
+          <Link aria-label="Back to top" to="/#hero"><MoveUpRight size={18} /></Link>
         </div>
+        <small>© {new Date().getFullYear()} Hoàng Tiến. DevFolio design by <a href="https://bootstrapmade.com/" rel="noreferrer" target="_blank">BootstrapMade</a>.</small>
       </div>
     </footer>
   )

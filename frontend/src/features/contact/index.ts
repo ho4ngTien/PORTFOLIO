@@ -1,1 +1,1 @@
-export * from './components'
+export { Contact } from './components'

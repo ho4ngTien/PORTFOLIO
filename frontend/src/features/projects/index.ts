@@ -1,1 +1,2 @@
-export * from './components'
+export { Projects } from './components'
+export { ProjectDetails } from './components'
